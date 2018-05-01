@@ -1,8 +1,4 @@
-## My 2018 Portfolio
-
-This is my portfolio.
-
-### [INSERT LIVE DEMO HERE](http://www.google.com)
+# My 2018 Portfolio
 
 ### Technologies used
 
@@ -11,4 +7,4 @@ This is my portfolio.
 ### License
 
 MIT
-# portfolio
+
