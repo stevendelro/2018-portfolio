@@ -4,13 +4,13 @@ import HomePage from '../components/Home';
 import PortfolioPage from '../components/Portfolio';
 import AboutPage from '../components/About';
 import ContactPage from '../components/Contact';
-import Header from '../components/Header';
+import NavBar from '../components/NavBar';
 import NotFoundPage from '../components/NotFoundPage';
 
 const AppRouter = () => (
   <BrowserRouter>
     <div>
-      <Header />
+      <NavBar />
       <Switch>
         <Route path="/" exact={true} component={HomePage} />
         <Route path="/about" component={AboutPage} />
