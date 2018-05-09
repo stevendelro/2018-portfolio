@@ -1,21 +1,49 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/app.js',
-  output: {
-    path: path.join(__dirname, 'public'),
-    filename: 'bundle.js'
+  mode: 'development',
+  devtool: 'cheap-module-eval-source-map',
+  context: path.join(__dirname, '/src'),
+
+  entry: {
+    javascript: './js/index'
   },
+
+  output: {
+    filename: 'bundle.js',
+    path: path.join(__dirname, '/dist')
+  },
+
+  resolve: {
+    alias: {
+      react: path.join(__dirname, 'node_modules', 'react')
+    },
+    extensions: ['.js', '.jsx']
+  },
+
   module: {
     rules: [
       {
-        loader: 'babel-loader',
-        test: /\.js$/,
-        exclude: /node_modules/
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        loaders: ['babel-loader']
       },
       {
-        test: /\.s?css$/,
-        use: ['style-loader', 'css-loader', 'sass-loader']
+        test: /\.html$/,
+        loader: 'file?name=[name].[ext]'
+      },
+      {
+        test: /\.css$/,
+        loaders: ['style-loader', 'css-loader', 'resolve-url-loader']
+      },
+      {
+        test: /\.scss$/,
+        loaders: [
+          'style-loader',
+          'css-loader',
+          'resolve-url-loader',
+          'sass-loader?sourceMap'
+        ]
       },
       {
         test: /\.(gif|png|jpe?g|svg|webp)$/i,
@@ -25,10 +53,5 @@ module.exports = {
         ]
       }
     ]
-  },
-  devtool: 'cheap-module-eval-source-map',
-  devServer: {
-    contentBase: path.join(__dirname, 'public'),
-    historyApiFallback: true
   }
 };
