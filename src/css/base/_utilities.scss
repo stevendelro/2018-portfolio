@@ -5,11 +5,37 @@
 .u-margin-bottom-small {
   margin-bottom: 1.5rem;
 }
+.u-margin-bottom-small-1 {
+  margin-bottom: 2rem;
+}
 
 .u-margin-bottom-medium {
   margin-bottom: 4rem;
+  @include respond(tab-portrait) {
+    margin-bottom: 3rem;
+  }
 }
 
 .u-margin-bottom-big {
   margin-bottom: 8rem;
+  @include respond(tab-portrait) {
+    margin-bottom: 5rem;
+  }
+}
+
+.u-margin-top-small {
+  margin-top: 2rem;
+}
+
+.u-margin-top-big {
+  margin-top: 8rem;
+}
+.u-margin-top-bigger {
+  margin-top: 10rem;
+}
+
+.u-big-button {
+  @include respond(tab-portrait) {
+    font-size: 3.6rem;
+  }
 }

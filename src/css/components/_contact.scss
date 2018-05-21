@@ -1,0 +1,45 @@
+.contact {
+  background-image: linear-gradient(
+      105deg,
+      rgba($color-primary-lighter, 0.9) 0%,
+      rgba($color-primary-light, 0.9) 50%,
+      transparent 50%
+    ),
+    url('https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Decorative-Elements-PNG/Envelope_PNG_Clip_Art_Image.png?m=1480823701');
+  background-size: 100%;
+  border-radius: 3px;
+  box-shadow: $color-box-shadow;
+
+  @include respond(tab-landscape) {
+    background-image: linear-gradient(
+        105deg,
+        rgba($color-primary-lighter, 0.9) 0%,
+        rgba($color-primary-light, 0.9) 65%,
+        transparent 65%
+      ),
+      url('https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Decorative-Elements-PNG/Envelope_PNG_Clip_Art_Image.png?m=1480823701');
+    background-size: cover;
+  }
+
+  @include respond(tab-portrait) {
+    background-image: linear-gradient(
+        180deg,
+        rgba($color-primary-lighter, 0.9) 0%,
+        rgba($color-primary-light, 0.9) 100%
+      ),
+      url('https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Decorative-Elements-PNG/Envelope_PNG_Clip_Art_Image.png?m=1480823701');
+  }
+
+  &__form {
+    width: 50%;
+    padding: 6rem;
+
+    @include respond(tab-landscape) {
+      width: 60%;
+    }
+
+    @include respond(tab-portrait) {
+      width: 100%;
+    }
+  }
+}

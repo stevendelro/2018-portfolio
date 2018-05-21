@@ -8,10 +8,31 @@
 
 html {
   // This defines what 1rem is.
-  // If this is set to 62.5, then rem = px divided by 10.
+  // If this is set to 62.5, then 1rem = 10px.
   font-size: 62.5%;
+
+  @include respond(tab-landscape) {
+    font-size: 56.25%;
+  }
+
+  @include respond(tab-portrait) {
+    font-size: 50%;
+  }
+
+  @include respond(laptop) {
+    font-size: 62.5%;
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%;
+  }
 }
 
 body {
+  box-sizing: border-box;
   padding: 30px;
+
+  @include respond(tab-portrait) {
+    padding: 0;
+  }
 }

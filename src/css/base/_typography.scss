@@ -3,7 +3,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
-  color: $color-grey-dark;
+  color: $color-grey-dark-1;
 }
 
 .heading-primary {
@@ -15,20 +15,52 @@ body {
 
   &--first {
     display: block;
-    font-size: 76px;
+    font-size: 16rem;
     font-weight: 400;
-    line-height: 44px;
-    letter-spacing: 10px;
+    line-height: 6rem;
+    letter-spacing: 1rem;
     animation: moveInLeft 1s ease-out;
+
+    @include respond(laptop) {
+      font-size: 21rem;
+      line-height: 7rem;
+    }
+
+    @include respond(tab-landscape) {
+      font-size: 16rem;
+    }
+
+    @include respond(tab-portrait) {
+      font-size: 10rem;
+    }
+
+    @include respond(phone) {
+      font-size: 8rem;
+    }
   }
 
   &--last {
     display: block;
-    font-size: 23px;
+    font-size: 7rem;
     font-weight: 400;
-    letter-spacing: 17.4px;
-    margin-bottom: -15px;
+    letter-spacing: 1.74rem;
+    margin-bottom: -9.5rem;
     animation: moveInRight 1s ease-out;
+
+    @include respond(laptop) {
+      font-size: 9.9rem;
+    }
+
+    @include respond(tab-landscape) {
+      font-size: 7rem;
+    }
+
+    @include respond(tab-portrait) {
+      font-size: 3.7rem;
+    }
+    @include respond(phone) {
+      font-size: 2.5rem;
+    }
   }
 }
 
@@ -37,20 +69,55 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(
-    to right,
-    $color-primary-light,
-    $color-primary-dark
-  );
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  letter-spacing: 2px;
+  letter-spacing: 0.2rem;
   transition: all 0.2s;
 
   &:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
+  }
+
+  &--primary {
+    background-image: linear-gradient(
+      to right,
+      $color-primary-light,
+      $color-primary-dark
+    );
+
+    @include respond(tab-landscape) {
+      font-size: 3rem;
+    }
+  }
+
+  &--white {
+    background-image: linear-gradient(
+      to right,
+      $color-white,
+      $color-grey-light-2
+    );
+  }
+
+  &--orange {
+    background-image: linear-gradient(
+      to right,
+      $color-secondary-light,
+      $color-secondary-dark
+    );
+  }
+
+  &--green {
+    background-image: linear-gradient(
+      to right,
+      $color-quaternary-light,
+      $color-quaternary-dark
+    );
+  }
+
+  @include respond(tab-portrait) {
+    font-size: 3rem;
   }
 }
 

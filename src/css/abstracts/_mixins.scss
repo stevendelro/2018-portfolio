@@ -1,7 +1,87 @@
 @mixin clearfix {
   &::after {
-    content: "";
+    content: '';
     display: table;
     clear: both;
+  }
+}
+
+@mixin centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* 
+
+~~ MEDIA QUERY MANAGER ~~
+
+NOTE: 
+  This is a desktop-first approach. 
+    • A mobile-first approach would have min-widths 
+      defined with a catch all max-width.
+    • Here we have max-widths defined with a catch all 
+      min-width.
+
+Media Query Ranges:
+  0 - 600px:      Phone
+  600 - 900px:    Tablet portrait
+  900 - 1200px:   Tablet landscape
+  [1200 - 1800]   Range at which our normal styles will 
+                  apply
+  1800px and up:  Big desktop
+
+$breakpoints:
+  • phone
+  • tab-portrait
+  • tab-landscape
+  • laptop
+  • big-desktop
+
+REMEMBER: 1em = 16px!
+
+ORDER OF RESPONSIVE DESIGN:
+  1. Base & Typography
+  2. General Layout & Grid
+  3. Page Layout
+  4. Components
+
+*/
+
+@mixin respond($breakpoint) {
+
+  // 500px / 16px = 37.5em
+  @if $breakpoint == phone {
+    @media (max-width: 31.25em) {
+      @content;
+    }
+  }
+
+  // 900px / 16px =  56.25em
+  @if $breakpoint == tab-portrait {
+    @media (max-width: 56.25em) {
+      @content;
+    }
+  }
+
+  // 1200px / 16px = 75em
+  @if $breakpoint == tab-landscape {
+    @media (max-width: 75em) {
+      @content;
+    }
+  }
+  // 1440px / 16px = 90em
+  @if $breakpoint == laptop {
+    @media (max-width: 112.5em) {
+      @content;
+    }
+  }
+
+  // 1800px / 16px = 112.5em
+  @if $breakpoint == big-desktop {
+    @media (min-width: 112.5em) {
+      @content;
+    }
   }
 }
