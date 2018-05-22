@@ -168,6 +168,10 @@
     font-weight: 100;
     text-transform: uppercase;
     margin-bottom: 7rem;
+
+    @include respond(tab-landscape) {
+      display: none;
+    }
   }
 
   @include respond(tab-portrait) {
@@ -194,7 +198,6 @@
     &__details {
       padding: 1rem 3rem;
     }
-
 
     // FRONT SIDE STYLING
     &__demo {
