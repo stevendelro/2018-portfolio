@@ -13,28 +13,31 @@
   &__content {
     @include centered;
 
-    width: 75%;
+    width: 90%;
     background-color: $color-white;
     box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
     border-radius: 3px;
-    display: table;
+    display: flex;
     backface-visibility: hidden;
     overflow: hidden;
     opacity: 0;
     transform: translate(-50%, -50%) scale(0);
-    transition: all .4s .2s;
+    transition: all 0.4s 0.2s;
   }
 
   &__left {
-    width: 36.3%;
-    display: table-cell;
+    width: inherit;
+    display: inline-block;
+    margin: auto;
+    @include respond(phone) {
+      display: none;
+    }
   }
 
   &__right {
-    width: 66.7%;
-    display: table-cell;
-    vertical-align: middle;
-    padding: 3rem 5rem;
+    width: fit-content;
+    display: inline-block;
+    padding: 3rem;
   }
 
   &__vid {
@@ -58,6 +61,15 @@
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto;
+
+    @include respond(tab-portrait) {
+      -moz-column-count: 1;
+      column-count: 1;
+      -moz-hyphens: auto;
+      -ms-hyphens: auto;
+      -webkit-hyphens: auto;
+      hyphens: auto;
+    }
   }
 
   // Open state
