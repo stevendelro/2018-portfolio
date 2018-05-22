@@ -580,10 +580,7 @@ const Main = () => (
       <div className="popup__content">
         <div className="popup__left">
           <video muted autoPlay loop className="popup__vid">
-            <source
-              src="https://cdn-b-east.streamable.com/video/mp4/z2bdd.mp4?token=K12TL8BpvPJh7QLUd0ScrA&expires=1526674834"
-              type="video/mp4"
-            />
+            <source src="https://goo.gl/q4Y8qR" type="video/mp4" />
             Hmm. Looks like your browser doesn't support video playback. :/
           </video>
         </div>
@@ -625,10 +622,7 @@ const Main = () => (
       <div className="popup__content">
         <div className="popup__left">
           <video muted autoPlay loop className="popup__vid">
-            <source
-              src="https://cdn-b-east.streamable.com/video/mp4/2jghp.mp4?token=vsML8MPm-fEAbAhyTrRX-Q&expires=1526674087"
-              type="video/mp4"
-            />
+            <source src="https://goo.gl/7roX4w" type="video/mp4" />
             Hmm. Looks like your browser doesn't support video playback. :/
           </video>
         </div>
@@ -670,10 +664,7 @@ const Main = () => (
       <div className="popup__content">
         <div className="popup__left">
           <video muted autoPlay loop className="popup__vid">
-            <source
-              src="https://cdn-b-east.streamable.com/video/mp4/ol1wf.mp4?token=kNOF_2F5V6ysRfaF46LBhw&expires=1526675904"
-              type="video/mp4"
-            />
+            <source src="https://goo.gl/fPhvpy" type="video/mp4" />
             Hmm. Looks like your browser doesn't support video playback. :/
           </video>
         </div>
