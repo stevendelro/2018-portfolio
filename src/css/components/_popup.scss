@@ -23,6 +23,18 @@
     opacity: 0;
     transform: translate(-50%, -50%) scale(0);
     transition: all 0.4s 0.2s;
+
+    @include respond(laptop) {
+      width: 70%;
+    }
+
+    @include respond(tab-landscape) {
+      width: 84%;
+    }
+
+    @include respond(tab-portrait) {
+      width: 97%;
+    }
   }
 
   &__left {
