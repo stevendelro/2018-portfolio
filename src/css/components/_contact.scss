@@ -5,7 +5,7 @@
       rgba($color-primary-light, 0.9) 50%,
       transparent 50%
     ),
-    url('https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Decorative-Elements-PNG/Envelope_PNG_Clip_Art_Image.png?m=1480823701');
+    url('../../img/contact-envelope.png');
   background-size: 100%;
   border-radius: 3px;
   box-shadow: $color-box-shadow;
@@ -17,7 +17,7 @@
         rgba($color-primary-light, 0.9) 65%,
         transparent 65%
       ),
-      url('https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Decorative-Elements-PNG/Envelope_PNG_Clip_Art_Image.png?m=1480823701');
+      url('../../img/contact-envelope.png');
     background-size: cover;
   }
 
@@ -27,12 +27,13 @@
         rgba($color-primary-lighter, 0.9) 0%,
         rgba($color-primary-light, 0.9) 100%
       ),
-      url('https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Decorative-Elements-PNG/Envelope_PNG_Clip_Art_Image.png?m=1480823701');
+      url('../../img/contact-envelope.png');
   }
 
   &__form {
     width: 50%;
     padding: 6rem;
+  
 
     @include respond(tab-landscape) {
       width: 60%;
@@ -40,6 +41,7 @@
 
     @include respond(tab-portrait) {
       width: 100%;
+      padding: 3rem;
     }
   }
 }

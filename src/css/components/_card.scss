@@ -67,7 +67,7 @@
           $color-secondary-light,
           $color-secondary-dark
         ),
-        url('https://farm1.staticflickr.com/966/41407817594_7044fc99b4_b.jpg');
+        url('../../img/projects-movie-finder.jpg');
     }
 
     &--2 {
@@ -76,7 +76,7 @@
           $color-tertiary-light,
           $color-tertiary-dark
         ),
-        url('https://farm1.staticflickr.com/943/42127861071_6210301498_b.jpg');
+        url('../../img/projects-weather-checker.jpg');
     }
 
     &--3 {
@@ -85,7 +85,7 @@
           $color-quaternary-light,
           $color-quaternary-dark
         ),
-        url('https://farm1.staticflickr.com/962/41407818424_7cf8203902_b.jpg');
+        url('../../img/projects-pitch-portal.jpg');
     }
   }
 
@@ -169,7 +169,7 @@
     text-transform: uppercase;
     margin-bottom: 7rem;
 
-    @include respond(tab-landscape) {
+    @include respond(tab-portrait) {
       display: none;
     }
   }
@@ -219,3 +219,5 @@
     }
   }
 }
+
+

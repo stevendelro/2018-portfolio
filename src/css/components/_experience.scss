@@ -16,6 +16,8 @@
   }
   @include respond(phone) {
     transform: skewX(0);
+    padding: 6rem;
+    padding-left: 6rem;
   }
 
   &__shape {
@@ -30,7 +32,7 @@
     position: relative;
 
     @include respond(phone) {
-      transform: translateX(-3rem) skewX(0deg);
+      height: 0;
     }
   }
 
@@ -39,6 +41,8 @@
     transform: translateX(-4rem) scale(1);
     backface-visibility: hidden;
     transition: all 0.5s;
+
+
   }
 
   &__text {
