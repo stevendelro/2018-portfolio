@@ -12,21 +12,18 @@
   }
 
   &__icon {
-    font-size: 6rem;
-    margin-bottom: 0.5rem;
-    display: inline-block;
-    background-image: linear-gradient(
-      to right,
-      $color-primary-light,
-      $color-primary-dark
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+    display: -webkit-inline-box;
 
     @include respond(tab-portrait) {
       margin: 0;
     }
+  }
+  &__text {
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+
   }
 
   &:hover {
