@@ -39,6 +39,7 @@
 
     @include respond(tab-portrait) {
       width: 97%;
+      height: 90%;
     }
   }
 
@@ -58,6 +59,10 @@
     width: fit-content;
     display: inline-block;
     padding: 3rem;
+    
+    @include respond(phone) {
+      overflow: scroll;
+    }
   }
 
   &__vid {
@@ -67,14 +72,7 @@
 
   &__text {
     font-size: 1.4rem;
-
-    -moz-column-count: 2;
-    -moz-column-gap: 4rem;
-    -moz-column-rule: 1px solid $color-grey-light-2;
-
-    column-count: 2;
-    column-gap: 4rem;
-    column-rule: 1px solid $color-grey-light-2;
+    margin-bottom: 3.4rem;
 
     -moz-hyphens: auto;
     -ms-hyphens: auto;
@@ -82,14 +80,11 @@
     hyphens: auto;
 
     @include respond(tab-portrait) {
-      -moz-column-count: 1;
-      column-count: 1;
       -moz-hyphens: auto;
       -ms-hyphens: auto;
       -webkit-hyphens: auto;
       hyphens: auto;
     }
-
   }
 
   // Open state
