@@ -94,24 +94,33 @@ const Main = () => (
         </div>
         <div className="row">
           <div className="col-1-of-2">
-            <h3 className="heading-tertiary u-margin-bottom-small">About me</h3>
+            <h3 className="heading-tertiary u-margin-bottom-small">
+              Hey there.
+            </h3>
             <p className="paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-              id, vitae odio iste, amet cum, sed ratione voluptates
-              reprehenderit perspiciatis aliquid illum. Laudantium laboriosam
-              porro velit impedit nostrum assumenda a.
+              Before you think I’m incredible with front end design, scroll down
+              and check out the footer. I always give credit where credit is
+              due.
             </p>
             <p className="paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-              rerum deleniti, debitis ipsa quam est alias provident omnis ad
-              libero quaerat dolorum obcaecati asperiores eligendi cum minima
-              minus repellendus officia?
+              Having said that, I want you to leave this page with a better
+              understanding of who I am.
             </p>
             <p className="paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-              rerum deleniti, debitis ipsa quam est alias provident omnis ad
-              libero quaerat dolorum obcaecati asperiores eligendi cum minima
-              minus repellendus officia?
+              Endlessly curious and easily entertained, my appetite to learn and
+              understand things enriches my life on a daily basis. I feed my
+              mind with books and podcasts. I meditate through running and
+              hiking. I make connections. I write.
+            </p>
+            <p className="paragraph">
+              I spent a long time looking for my lovely girlfriend. It took some
+              time, but I found her and I love her to death. I spent six months
+              looking for the right puppy for my life, now I have the best dog a
+              man can have. I spent a decade looking for a career that could
+              empower me to become an endless source of value..
+            </p>
+            <p className="paragraph">
+              ..and now I’m a junior software engineer.
             </p>
             <a href="https://medium.com/@stevendelrosario" className="btn-text">
               Visit blog &rarr;
@@ -641,23 +650,33 @@ const Main = () => (
             The Weather Checker
           </h2>
           <h3 className="heading-tertiary u-margin-bottom-small">
-            Important &ndash; This sentence is here for filler.
+            first project with redux state management
           </h3>
           <p className="popup__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
-            ratione facere alias ut cum fugiat consequuntur voluptatibus. Enim
-            sit numquam a ea esse ad natus maiores, ducimus, eligendi sunt quam!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
-            ratione facere alias ut cum fugiat consequuntur voluptatibus. Enim
-            sit numquam a ea esse ad natus maiores, ducimus, eligendi sunt quam!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
-            ratione facere alias ut cum fugiat consequuntur voluptatibus.
+            The goal of this project was to understand how to manage state with
+            Redux. <br />
+            <br />The user is presented with a search bar and a few different
+            buttons. When the user clicks on a button or manually searches for a
+            city via the search bar, I use that search term to send a request to
+            the OpenWeatherMap API to retrieve the current weather. <br />
+            <br /> When I receive the JSON response, the data filters through my
+            reducers where I organize it and store it within the redux store for
+            my components to use. The UI consists of two main components: the
+            City Information Card and the Search History Card. <br />
+            <br />The City Information Card displays all the data that I
+            requested from OpenWeatherMap, and the Search History Card utilizes
+            “Moment”, a small npm package, to display time information to the
+            user.<br />
+            <br />For deeper insight, check the blog post.
           </p>
           <a
             href="http://sd-weather-app.herokuapp.com/"
             className="btn btn--primary"
           >
             DEMO
+          </a>
+          <a href="#" className="btn-text btn-text__popup btn-text__popup">
+            Visit blog &rarr;
           </a>
         </div>
       </div>

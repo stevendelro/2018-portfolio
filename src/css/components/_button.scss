@@ -14,7 +14,6 @@
     // Change for thr <button> element
     border: none;
     cursor: pointer;
-
   }
 
   &:hover {
@@ -27,7 +26,8 @@
     }
   }
 
-  &:active, &:focus {
+  &:active,
+  &:focus {
     outline: none;
     transform: translateY(-1px);
     box-shadow: 0 5px 10px rgba($color-black, 0.2);
@@ -73,7 +73,7 @@
     top: 0;
     left: 0;
     z-index: -1;
-    transition: all .4s;
+    transition: all 0.4s;
   }
 
   &--animated {
@@ -108,4 +108,33 @@
     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.15);
     transform: translateY(0);
   }
+
+  &__popup {
+    float: right;
+    margin: 1rem;
+
+    &--secondary {
+      &:link,
+      &:visited {
+        color: $color-secondary-dark;
+        border-bottom: 1px solid $color-secondary-dark;
+      }
+
+      &:hover {
+        background-color: $color-secondary-dark;
+      }
+    }
+    &--tertiary {
+      &:link,
+      &:visited {
+        color: $color-tertiary-dark;
+        border-bottom: 1px solid $color-tertiary-dark;
+      }
+
+      &:hover {
+        background-color: $color-tertiary-dark;
+      }
+    }
+  }
 }
+
