@@ -117,7 +117,9 @@ const Main = () => (
               decade looking for a career that could amplify my ability to
               produce value.
             </p>
-            <p className="paragraph">Web development has given me exactly that.</p>
+            <p className="paragraph">
+              Web development has given me exactly that.
+            </p>
             <p className="paragraph">
               Becoming a javascript developer is just the beginning. Join me on
               my imperfect journey as I fail, succeed, and relentlessly improve
@@ -665,10 +667,11 @@ const Main = () => (
             my components to use. The UI consists of two main components: the
             City Information Card and the Search History Card. <br />
             <br />The City Information Card displays all the data that I
-            requested from OpenWeatherMap, and the Search History Card utilizes
-            “Moment”, a small npm package, to display time information to the
-            user.<br />
-            <br />For deeper insight, check the blog post.
+            requested from OpenWeatherMap API, and the Search History Card
+            utilizes “Moment”, a small npm package, to display time information
+            to the user.<br />
+            <br />For deeper insight on my development process, check out the
+            blog post.
           </p>
           <a
             href="http://sd-weather-app.herokuapp.com/"
@@ -677,7 +680,7 @@ const Main = () => (
             DEMO
           </a>
           <a href="#" className="btn-text btn-text__popup btn-text__popup">
-            Visit blog &rarr;
+            Blog post &rarr;
           </a>
         </div>
       </div>
@@ -706,23 +709,49 @@ const Main = () => (
             The Movie Finder
           </h2>
           <h3 className="heading-tertiary u-margin-bottom-small">
-            Important &ndash; This sentence is here for filler.
+            A solution for a deceivingly difficult problem
           </h3>
           <p className="popup__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
-            ratione facere alias ut cum fugiat consequuntur voluptatibus. Enim
-            sit numquam a ea esse ad natus maiores, ducimus, eligendi sunt quam!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
-            ratione facere alias ut cum fugiat consequuntur voluptatibus. Enim
-            sit numquam a ea esse ad natus maiores, ducimus, eligendi sunt quam!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
-            ratione facere alias ut cum fugiat consequuntur voluptatibus.
+            The goal of this project was to understand and implement
+            React-Router within our app to create a multi-page experience.<br />
+            <br />
+            Movie Finder will take search terms from the user and send a request
+            to The Open Movie Database API for a list of movies that relate to
+            that search term. Each list item was required to have a button to
+            take them to another page with more details, a title, a poster, a
+            year released and a small synopsis. <br />
+            <br />
+            The user will see a loading spinner for a few seconds while Movie
+            Finder receives and manipulates the data that comes in. A list of
+            movies are shown with all the required items. The user can click on
+            the More Information button to see more details, then click Return
+            Home to get back to the home page<br />
+            <br />
+            What made this tricky was that the small synopsis was not available
+            within the list of related movie items. Shortened plots are
+            available only when a request is sent for a single movie only.<br />
+            <br />
+            In order to fulfill requirements and get the small synopsis for each
+            list item, I scraped the movie IDs from the initial list of search
+            results. With the array of IDs, I used a custom asynchronous forEach
+            function to make sequential asynchronous calls to the API and pushed
+            each response into an array as they came in. That array contained all the
+            information for each movie &ndash; in the correct order &ndash; for
+            me to use as I pleased.<br />
+            <br />
+            For a full breakdown, check out my blog post.
           </p>
           <a
             href="http://sd-movie-finder.herokuapp.com/"
             className="btn btn--orange"
           >
             LIVE DEMO
+          </a>
+          <a
+            href="#"
+            className="btn-text btn-text__popup btn-text__popup--secondary"
+          >
+            Blog post &rarr;
           </a>
         </div>
       </div>
