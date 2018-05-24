@@ -100,10 +100,7 @@ const Main = () => (
             <p className="paragraph">
               Before you think I’m incredible with front end design, scroll down
               and check out the footer. I always give credit where credit is
-              due.
-            </p>
-            <p className="paragraph">
-              Having said that, I want you to leave this page with a better
+              due. Having said that, I want you to leave this page with a better
               understanding of who I am.
             </p>
             <p className="paragraph">
@@ -113,14 +110,18 @@ const Main = () => (
               hiking. I make connections. I write.
             </p>
             <p className="paragraph">
-              I spent a long time looking for my lovely girlfriend. It took some
-              time, but I found her and I love her to death. I spent six months
-              looking for the right puppy for my life, now I have the best dog a
-              man can have. I spent a decade looking for a career that could
-              empower me to become an endless source of value..
+              I spent six months looking for the right puppy for me, and now I
+              have the best dog a man could ever have. I spent years learning
+              about myself while searching for my lovely girlfriend. It took
+              some time, but I found her and I love her to death. I spent a
+              decade looking for a career that could amplify my ability to
+              produce value.
             </p>
+            <p className="paragraph">Web development has given me exactly that.</p>
             <p className="paragraph">
-              ..and now I’m a junior software engineer.
+              Becoming a javascript developer is just the beginning. Join me on
+              my imperfect journey as I fail, succeed, and relentlessly improve
+              my ability bring value to those who need it.
             </p>
             <a href="https://medium.com/@stevendelrosario" className="btn-text">
               Visit blog &rarr;
