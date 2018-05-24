@@ -125,16 +125,16 @@
         background-color: $color-secondary-dark;
       }
     }
-    &--tertiary {
+    &--quaternary {
       &:link,
       &:visited {
-        color: $color-tertiary-dark;
-        border-bottom: 1px solid $color-tertiary-dark;
+        color: $color-quaternary-dark;
+        border-bottom: 1px solid $color-quaternary-dark;
       }
 
       &:hover {
         color: $color-white;
-        background-color: $color-tertiary-dark;
+        background-color: $color-quaternary-dark;
       }
     }
   }
