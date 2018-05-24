@@ -620,8 +620,11 @@ const Main = () => (
             truly.
           </p>
           <p className="footer__copyright--p">
-            In no way, shape, or form do I take any personal credit for this
-            website's initial design.
+            The images, video/gifs and colors that are used on this site were
+            all selected and edited by me. All extra functionality was developed
+            by me with the techniques learned from the course. In no way, shape,
+            or form do I take any personal credit for this website's initial
+            design, but I did totally refine and polished it like a boss. 
           </p>
           <p className="footer__copyright--p">
             Copyright &copy; by Jonas Schmedtmann.
@@ -735,9 +738,9 @@ const Main = () => (
             list item, I scraped the movie IDs from the initial list of search
             results. With the array of IDs, I used a custom asynchronous forEach
             function to make sequential asynchronous calls to the API and pushed
-            each response into an array as they came in. That array contained all the
-            information for each movie &ndash; in the correct order &ndash; for
-            me to use as I pleased.<br />
+            each response into an array as they came in. That array contained
+            all the information for each movie &ndash; in the correct order
+            &ndash; for me to use as I pleased.<br />
             <br />
             For a full breakdown, check out my blog post.
           </p>
