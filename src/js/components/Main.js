@@ -110,20 +110,19 @@ const Main = () => (
               hiking. I make connections. I write.
             </p>
             <p className="paragraph">
-              I spent six months looking for the right puppy for me, and now I
-              have the best dog a man could ever have. I spent years learning
-              about myself while searching for my lovely girlfriend. It took
-              some time, but I found her and I love her to death. I spent a
-              decade looking for a career that could amplify my ability to
-              produce value.
+              I spent six months looking for the right dog for me, and now I
+              have the best dog a man could ever have. I've spent years learning
+              about myself and searching for my lovely girlfriend. I found her
+              and love her to death. Most importantly, I've spent a decade
+              searching for a career that would amplify my ability to produce
+              value.
             </p>
             <p className="paragraph">
-              Web development has given me exactly that.
+              Becoming a javascript developer has given me exactly that.
             </p>
             <p className="paragraph">
-              Becoming a javascript developer is just the beginning. Join me on
-              my imperfect journey as I fail, succeed, and relentlessly improve
-              my ability bring value to those who need it.
+              Join me on this imperfect journey as I fail, succeed, and
+              relentlessly improve my ability bring value to those who need it.
             </p>
             <a href="https://medium.com/@stevendelrosario" className="btn-text">
               Visit blog &rarr;
@@ -624,7 +623,7 @@ const Main = () => (
             all selected and edited by me. All extra functionality was developed
             by me with the techniques learned from the course. In no way, shape,
             or form do I take any personal credit for this website's initial
-            design, but I did totally refine and polished it like a boss. 
+            design, but I did totally refine and polished it like a boss.
           </p>
           <p className="footer__copyright--p">
             Copyright &copy; by Jonas Schmedtmann.
@@ -786,17 +785,44 @@ const Main = () => (
             Important &ndash; This sentence is here for filler.
           </h3>
           <p className="popup__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
-            ratione facere alias ut cum fugiat consequuntur voluptatibus. Enim
-            sit numquam a ea esse ad natus maiores, ducimus, eligendi sunt quam!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
-            ratione facere alias ut cum fugiat consequuntur voluptatibus. Enim
-            sit numquam a ea esse ad natus maiores, ducimus, eligendi sunt quam!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
-            ratione facere alias ut cum fugiat consequuntur voluptatibus.
+            This project was developed in an Agile/Scrum environment where I was
+            on a team of five and we had three weeks to create a minimum viable
+            product.<br />
+            <br />
+            Origin Code Academy receives requests from local businesses to have
+            an app developed by students who have completed the curriculum. The
+            students get the experience of working in a real development
+            environment with a real client. In return, the client receives an
+            app that brings value to their company. <br />
+            <br />
+            Essentially, a link to this app would be given to a company with an
+            idea for an app. The company would create an account and fill out a
+            few forms regarding the specifics of their idea. <br />
+            <br />
+            Each company would have their own dashboard to manage their requests
+            and exchange comments with the OCA admin. Each request would have
+            the ability to upload videos and files, as well as edit the
+            information that they’ve already given us.<br />
+            <br />
+            The OCA admin will have an admin dashboard which would oversee all
+            requests and have the ability to approve or deny the requests.<br />
+            <br />
+            Within this project we implemented authentication, controlled inputs
+            via Redux-Form, a dynamic end-to-end REST API with loopback.io, mLab
+            to host our backend data, balsamic for wire framing, lucidchart our
+            ERD scaffolding, and much much more.<br />
+            <br />
+            If you’d like more details on the whole process, check out the blog
+            post.
           </p>
           <a href="http://pitchportal.io/" className="btn btn--green">
             DEMO
+          </a>
+          <a
+            href="#"
+            className="btn-text btn-text__popup btn-text__popup--quaternary"
+          >
+            Blog post &rarr;
           </a>
         </div>
       </div>
