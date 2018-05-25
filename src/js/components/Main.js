@@ -627,7 +627,7 @@ const Main = () => (
             all selected and edited by me. All extra functionality was developed
             by me with the techniques learned from the course. In no way, shape,
             or form do I take any personal credit for this website's initial
-            design, but I did totally refine and polished it like a boss.
+            design, but I did totally refine and polish it like a boss.
           </p>
           <p className="footer__copyright--p">
             Copyright &copy; by Jonas Schmedtmann.
