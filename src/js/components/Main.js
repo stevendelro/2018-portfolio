@@ -98,31 +98,29 @@ const Main = () => (
               Hey there.
             </h3>
             <p className="paragraph">
-              Before you think I’m incredible with front end design, scroll down
+              Before you think I’m an incredible front-end designer, scroll down
               and check out the footer. I always give credit where credit is
               due. Having said that, I want you to leave this page with a better
-              understanding of who I am.
-            </p>
-            <p className="paragraph">
+              understanding of who I am.<br />
+              <br />
               Endlessly curious and easily entertained, my appetite to learn and
-              understand things enriches my life on a daily basis. I feed my
-              mind with books and podcasts. I meditate through running and
-              hiking. I make connections. I write.
-            </p>
-            <p className="paragraph">
-              I spent six months looking for the right dog for me, and now I
-              have the best dog a man could ever have. I've spent years learning
-              about myself and searching for my lovely girlfriend. I found her
-              and love her to death. Most importantly, I've spent a decade
-              searching for a career that would amplify my ability to produce
-              value.
-            </p>
-            <p className="paragraph">
-              Becoming a javascript developer has given me exactly that.
-            </p>
-            <p className="paragraph">
-              Join me on this imperfect journey as I fail, succeed, and
-              relentlessly improve my ability bring value to those who need it.
+              understand enriches my life on a daily basis. I feed my mind with
+              books and podcasts. I meditate through running and hiking. I make
+              connections. I write.<br />
+              <br />
+              I spent six months learning and looking for the perfect dog, and
+              now I have the best dog a man could ever have. I've spent years
+              searching for the right woman to become my lovely girlfriend.
+              Having found her, I couldn't be happier. I've spent a decade
+              searching for a career that would challenge my intellect, improve
+              my personal agency and keep me relevent within this ever-changing
+              digital world.<br />
+              <br />
+              Becoming a javascript developer has given me exactly that.<br />
+              <br />
+              Be sure to check out the blog for more insight on who I am and how
+              I think. I'm always on the lookout for good book recommendations,
+              so definitely reach out if you have any in mind.
             </p>
             <a href="https://medium.com/@stevendelrosario" className="btn-text">
               Visit blog &rarr;
@@ -655,23 +653,22 @@ const Main = () => (
             The Weather Checker
           </h2>
           <h3 className="heading-tertiary u-margin-bottom-small">
-            first project with redux state management
+            Learning and understanding redux state management
           </h3>
           <p className="popup__text">
             The goal of this project was to understand how to manage state with
             Redux. <br />
-            <br />The user is presented with a search bar and a few different
-            buttons. When the user clicks on a button or manually searches for a
-            city via the search bar, I use that search term to send a request to
-            the OpenWeatherMap API to retrieve the current weather. <br />
-            <br /> When I receive the JSON response, the data filters through my
-            reducers where I organize it and store it within the redux store for
-            my components to use. The UI consists of two main components: the
-            City Information Card and the Search History Card. <br />
-            <br />The City Information Card displays all the data that I
-            requested from OpenWeatherMap API, and the Search History Card
-            utilizes “Moment”, a small npm package, to display time information
-            to the user.<br />
+            <br />The user is presented with a search bar and a few quick search
+            buttons. When the user clicks on a button &ndash; or manually
+            searches for a city via the search bar &ndash; a request to the
+            OpenWeatherMap API would be made to retrieve that city's current
+            weather. The response data would then be filtered through my
+            reducers where it will be organized and stored within the redux
+            store.<br />
+            <br /> Aside from the search bar, the UI consists of two other
+            components: a weather information display and a search log. The
+            weather information panel displays the weather, while the search
+            history panel logs the city name, time and date of each request.<br />
             <br />For deeper insight on my development process, check out the
             blog post.
           </p>
@@ -717,28 +714,34 @@ const Main = () => (
             The goal of this project was to understand and implement
             React-Router within our app to create a multi-page experience.<br />
             <br />
-            Movie Finder will take search terms from the user and send a request
-            to The Open Movie Database API for a list of movies that relate to
-            that search term. Each list item was required to have a button to
-            take them to another page with more details, a title, a poster, a
-            year released and a small synopsis. <br />
+            Movie Finder will take the user input and query The Open Movie
+            Database API to retrieve a list of movies that relate to that search
+            term. Each list item was required to have: a title, a poster, a year
+            released, a button to show more details &ndash; and a small
+            synopsis.<br />
             <br />
-            The user will see a loading spinner for a few seconds while Movie
-            Finder receives and manipulates the data that comes in. A list of
-            movies are shown with all the required items. The user can click on
-            the More Information button to see more details, then click Return
-            Home to get back to the home page<br />
+            After firing off a search request, the user will see a loading
+            spinner while Movie Finder works it's magic. A list of movies with
+            all the required items would then be presented to the user. At this
+            point the user can browse the list, click on the More Information
+            button to see more details for a specific movie, then click Return
+            Home to go back to the search results.<br />
             <br />
-            What made this tricky was that the small synopsis was not available
-            within the list of related movie items. Shortened plots are
-            available only when a request is sent for a single movie only.<br />
+            Now, what made this tricky was getting that small synopsis to appear
+            within the list of search results. The OMDB API did not give plot
+            snippets for each movie when queried for a list of movies. The
+            shortened plots are available only when requesting details for a
+            single movie.<br />
             <br />
-            In order to fulfill requirements and get the small synopsis for each
-            list item, I scraped the movie IDs from the initial list of search
-            results. With the array of IDs, I used a custom asynchronous forEach
-            function to make sequential asynchronous calls to the API and pushed
-            each response into an array as they came in. That array contained
-            all the information for each movie &ndash; in the correct order
+            In order to get the shortened plot for each list item, I scraped the
+            movie IDs from the initial list of search results. With the array of
+            IDs, I used a custom asynchronous forEach function to make
+            sequential asynchronous calls to the API.<br />
+            <br />
+            As each response came in, that data would be pushed into an array
+            and another response would fire off. This would occur until I
+            collected the full details for each movie. This new array contained
+            everything I needed for each movie &ndash; in the correct order
             &ndash; for me to use as I pleased.<br />
             <br />
             For a full breakdown, check out my blog post.
@@ -782,7 +785,7 @@ const Main = () => (
             OCA Pitch Portal
           </h2>
           <h3 className="heading-tertiary u-margin-bottom-small">
-            Important &ndash; This sentence is here for filler.
+            A repository of ideas &ndash; A world of possibilities
           </h3>
           <p className="popup__text">
             This project was developed in an Agile/Scrum environment where I was
@@ -792,12 +795,14 @@ const Main = () => (
             Origin Code Academy receives requests from local businesses to have
             an app developed by students who have completed the curriculum. The
             students get the experience of working in a real development
-            environment with a real client. In return, the client receives an
-            app that brings value to their company. <br />
+            environment &ndash; with a real client. In return, the client
+            receives an app that brings value to their company. <br />
             <br />
-            Essentially, a link to this app would be given to a company with an
-            idea for an app. The company would create an account and fill out a
-            few forms regarding the specifics of their idea. <br />
+            A link to Pitch Portal would be emailed to a person who would like
+            to pitch an idea for the students to develop. The company would
+            create an account and fill out a few forms regarding the specifics
+            of their idea. At this point, the OCA admin could select a few
+            promising pitches for the students to choose from.<br />
             <br />
             Each company would have their own dashboard to manage their requests
             and exchange comments with the OCA admin. Each request would have
@@ -805,15 +810,16 @@ const Main = () => (
             information that they’ve already given us.<br />
             <br />
             The OCA admin will have an admin dashboard which would oversee all
-            requests and have the ability to approve or deny the requests.<br />
+            requests. This admin account has the ability to approve, deny, edit
+            and comment on all pitches.<br />
             <br />
-            Within this project we implemented authentication, controlled inputs
-            via Redux-Form, a dynamic end-to-end REST API with loopback.io, mLab
-            to host our backend data, balsamic for wire framing, lucidchart our
-            ERD scaffolding, and much much more.<br />
+            Within this project, we implemented: authentication, controlled
+            inputs via Redux-Form, a dynamic end-to-end REST API with
+            loopback.io, mongoDB and mLab to host our backend data, balsamiq for
+            wire framing, lucidchart for ERD scaffolding, and much much more.<br />
             <br />
-            If you’d like more details on the whole process, check out the blog
-            post.
+            If you’d like more details on the whole process and to learn more
+            about my specific role, check out the blog post.
           </p>
           <a href="http://pitchportal.io/" className="btn btn--green">
             DEMO
