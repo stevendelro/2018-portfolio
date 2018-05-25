@@ -282,11 +282,11 @@ const Main = () => (
                 </h4>
                 <div className="card__details">
                   <ul>
-                    <li>React/Redux</li>
-                    <li>Styled with Bootstrap</li>
+                    <li>React - Redux</li>
+                    <li>Bootstrap</li>
                     <li>OpenWeatherMap API</li>
                     <li>React-Animations/Radium</li>
-                    <li>Webpack/Babel</li>
+                    <li>Webpack - Babel</li>
                   </ul>
                 </div>
               </div>
@@ -316,11 +316,11 @@ const Main = () => (
                 </h4>
                 <div className="card__details">
                   <ul>
-                    <li>React/Redux/Router</li>
-                    <li>Styled With BulmaCSS</li>
+                    <li>React - Redux - Router</li>
+                    <li>BulmaCSS</li>
                     <li>Await/Async</li>
                     <li>Redux Thunk</li>
-                    <li>ES6/ES7 Syntax</li>
+                    <li>ES7 Syntax via Babel</li>
                   </ul>
                 </div>
               </div>
@@ -350,11 +350,11 @@ const Main = () => (
                 </h4>
                 <div className="card__details">
                   <ul>
-                    <li>Full Stack MERN App</li>
                     <li>AGILE/SCRUM</li>
-                    <li>Loopback.io</li>
-                    <li>Redux Form</li>
-                    <li>Bootstrap V4</li>
+                    <li>End-to-end REST API</li>
+                    <li>Authentication</li>
+                    <li>MongoDB and mLab</li>
+                    <li>Controlled Inputs</li>
                   </ul>
                 </div>
               </div>
@@ -418,11 +418,15 @@ const Main = () => (
                 Veterinary Technician/ Veterinary Assistant
               </h3>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
-                veritatis est vero quam porro cum, illum eligendi esse. Modi
-                tempora repellendus, obcaecati neque dignissimos magni eligendi
-                fugiat aliquid fuga eveniet. Modi tempora repellendus, obcaecati
-                neque dignissimos magni eligendi fugiat aliquid fuga eveniet.
+                Snug Pet Resort was a place were I was able to really hone in on
+                my social strengths. Here, I was able to develop and refine my
+                empathetic approach to leadership. Aside from training dogs, I
+                was able to master every position available. I became extremely
+                proficient with Cornerstone, Avimark and Kennel Connection
+                software. I developed great professional relationships with all
+                the clientele. I spent my last year with them as a vet
+                technician, assisting the veterinarians with all procedures and
+                protocols.
               </p>
             </div>
           </div>
@@ -445,11 +449,13 @@ const Main = () => (
                 Shift Manager/ Team Leader
               </h3>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
-                veritatis est vero quam porro cum, illum eligendi esse. Modi
-                tempora repellendus, obcaecati neque dignissimos magni eligendi
-                fugiat aliquid fuga eveniet. Modi tempora repellendus, obcaecati
-                neque dignissimos magni eligendi fugiat aliquid fuga eveniet.
+                Although I’ve been working since I was 15, Fresh & Easy was the
+                first job where I proved to myself that I have what it takes to
+                be a leader. As an entry level employee, I worked my way up to
+                to shift manager. Here, I developed my work ethic, my sense of
+                urgency, time management, the ability to take ownership of my
+                mistakes, and how to cultivate a rich social landscape with all
+                my coworkers.
               </p>
             </div>
           </div>
@@ -724,25 +730,28 @@ const Main = () => (
             spinner while Movie Finder works it's magic. A list of movies with
             all the required items would then be presented to the user. At this
             point the user can browse the list, click on the More Information
-            button to see more details for a specific movie, then click Return
-            Home to go back to the search results.<br />
+            button to get details on a specific movie, then click Return Home to
+            go back to the search results.<br />
             <br />
             Now, what made this tricky was getting that small synopsis to appear
-            within the list of search results. The OMDB API did not give plot
-            snippets for each movie when queried for a list of movies. The
-            shortened plots are available only when requesting details for a
-            single movie.<br />
+            within the list of search results. The OMDB API does not provide any
+            plot information when queried for a list of movies, only statistical
+            data. The only way to get shortened plots would be to request the
+            full details of one movie at a time.<br />
+            <br />
+            With the help of redux-thunk, I was able to solve this problem with
+            a single function.<br />
             <br />
             In order to get the shortened plot for each list item, I scraped the
-            movie IDs from the initial list of search results. With the array of
-            IDs, I used a custom asynchronous forEach function to make
+            movie IDs from the initial list of search results. With an array of
+            movie IDs, I used a custom asynchronous forEach function to make
             sequential asynchronous calls to the API.<br />
             <br />
             As each response came in, that data would be pushed into an array
             and another response would fire off. This would occur until I
-            collected the full details for each movie. This new array contained
-            everything I needed for each movie &ndash; in the correct order
-            &ndash; for me to use as I pleased.<br />
+            collected the complete details for each movie. This new array
+            contained everything I needed &ndash; in the correct order &ndash;
+            for me to use as I pleased.<br />
             <br />
             For a full breakdown, check out my blog post.
           </p>
