@@ -4,7 +4,7 @@
   "description": "Steven's 2018 React Portfolio",
   "main": "server/index.js",
   "scripts": {
-    "build": "npm run sass && webpack -w",
+    "build": "npm run sass && webpack -p",
     "start": "node server/index.js",
     "sass": "sass src/css/main.scss dist/css/style.css"
   },
