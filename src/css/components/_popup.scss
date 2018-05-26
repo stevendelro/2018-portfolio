@@ -10,11 +10,16 @@
   visibility: hidden;
   transition: all 0.3s;
 
+  ::selection {
+    background-color: $color-grey-dark-2;
+    color: $color-white;
+  }
+
   &__content {
     @include centered;
 
     width: 90%;
-    min-height: 55rem;
+    max-height: 90%;
     background-color: $color-white;
     box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
     border-radius: 3px;
@@ -59,10 +64,7 @@
     width: fit-content;
     display: inline-block;
     padding: 3rem;
-    
-    @include respond(phone) {
-      overflow: scroll;
-    }
+    overflow: scroll;
   }
 
   &__vid {
