@@ -1,8 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  mode: 'development',
-  devtool: 'cheap-module-eval-source-map',
+  mode: 'production',
   context: path.join(__dirname, '/src'),
 
   entry: {
