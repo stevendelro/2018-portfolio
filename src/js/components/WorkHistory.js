@@ -8,7 +8,7 @@ const WorkHistory = () => {
       <div className="bg-video">
         <video muted autoPlay loop className="bg-video__content">
           <source
-            src="https://coverr.co/s3/mp4/Ground-Zero.mp4"
+            src="https://staging.coverr.co/s3/mp4/Ground-Zero.mp4"
             type="video/mp4"
           />
           Sorry! Your browser doesn't support background videos... =/
