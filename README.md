@@ -10,14 +10,14 @@ A full write up of thoughts and anectdotes regarding the creation of this portfo
 #### Agenda for 11/1/2018
 
 1. Integrate SendGrid to get the Contact Form working properly.
-2. Complete blog post write ups for each project.
-3. Replace React with Preact.
-4. Code-split all the things.
-5. Get site back online on DigitalOcean.
-
-Stretch Goal:
-Get all images and project apps on DigitalOcean as well.
+2. Replace React with Preact.
+3. Code-split all the things.
+4. Get all images and projects hosted on Digital Ocean.
+5. Get site back online on Digital Ocean.
 
 #### Agenda for 11/2/2018
 
-      To be determined..
+1. Complete the project blog posts.
+2. Revive an old blog to host the blog posts.
+3. Begin data structures and algorithms toots.
+4. Begin the job search.
