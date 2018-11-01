@@ -10,7 +10,7 @@ A full write up of thoughts and anectdotes regarding the creation of this portfo
 #### Agenda for 11/1/2018
 
 1. Integrate SendGrid to get the Contact Form working properly.
-2. Work on blog post write ups for each project.
+2. Complete blog post write ups for each project.
 3. Get site back online on DigitalOcean.
 
 Stretch Goal:
