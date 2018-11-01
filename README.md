@@ -11,10 +11,12 @@ A full write up of thoughts and anectdotes regarding the creation of this portfo
 
 1. Integrate SendGrid to get the Contact Form working properly.
 2. Complete blog post write ups for each project.
-3. Get site back online on DigitalOcean.
+3. Replace React with Preact.
+4. Code-split all the things.
+5. Get site back online on DigitalOcean.
 
 Stretch Goal:
-Host all images and project apps on DigitalOcean.
+Get all images and project apps on DigitalOcean as well.
 
 #### Agenda for 11/2/2018
 
