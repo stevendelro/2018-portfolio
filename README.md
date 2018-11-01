@@ -14,7 +14,7 @@ A full write up of thoughts and anectdotes regarding the creation of this portfo
 3. Get site back online on DigitalOcean.
 
 Stretch Goal:
-4. Host all images and apps on DigitalOcean.
+Host all images and project apps on DigitalOcean.
 
 ## Agenda for 11/2/2018
 
