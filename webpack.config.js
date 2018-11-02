@@ -1,8 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  devtool: 'inline-source-map',
-  mode: 'development',
+  mode: 'production',
   context: path.join(__dirname, '/src'),
 
   entry: {
