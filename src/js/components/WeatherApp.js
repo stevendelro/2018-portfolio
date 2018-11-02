@@ -47,7 +47,11 @@ const WeatherApp = () => (
         >
           DEMO
         </a>
-        <a href="#" className="btn-text btn-text__popup btn-text__popup">
+        <a
+          href="#"
+          className="btn-text btn-text__popup btn-text__popup"
+          onClick={() => alert('Blog post is still under construction!')}
+        >
           Blog post &rarr;
         </a>
       </div>

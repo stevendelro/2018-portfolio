@@ -76,6 +76,7 @@ const MovieFinder = () => (
         <a
           href="#"
           className="btn-text btn-text__popup btn-text__popup--secondary"
+          onClick={() => alert('Blog post is still under construction!')}
         >
           Blog post &rarr;
         </a>
