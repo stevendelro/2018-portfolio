@@ -33,7 +33,7 @@ const Navigation = () => (
         </li>
         <li className="navigation__item">
           <a
-            href="https://www.scribd.com/document/379513842/Steven-Del-Rosario-Resume"
+            href="https://drive.google.com/file/d/1z9aGJ0CgTQiaK2O-RSQtXAddJ93_ljlx/view?usp=sharing"
             className="navigation__link"
           >
             Resume

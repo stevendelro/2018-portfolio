@@ -78,10 +78,10 @@ const WorkHistory = () => (
     </div>
     <div className="u-center-text u-margin-top-bigger">
       <a
-        href="https://www.linkedin.com/in/stevendelrosario/"
+        href="https://drive.google.com/file/d/1z9aGJ0CgTQiaK2O-RSQtXAddJ93_ljlx/view?usp=sharing"
         className="btn-text"
       >
-        LinkedIn&rarr;
+        Resume&rarr;
       </a>
     </div>
   </section>
