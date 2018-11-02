@@ -1,6 +1,4 @@
 import React from 'preact-compat';
-import freshEasyPic from '../../img/experience-fresh-easy.jpg';
-import snugPetPic from '../../img/experience-snug-pet.jpg';
 
 const WorkHistory = () => (
   <section className="section-experience" id="experience">
@@ -24,7 +22,7 @@ const WorkHistory = () => (
         <figure className="experience__shape">
           <img
             className="experience__img"
-            src={snugPetPic}
+            src="https://image.ibb.co/bVvkYL/experience-snug-pet.jpg"
             alt="Snug Pet Resort & Animal Hospital"
           />
           <figcaption className="experience__caption">
@@ -54,7 +52,7 @@ const WorkHistory = () => (
         <figure className="experience__shape">
           <img
             className="experience__img"
-            src={freshEasyPic}
+            src="https://image.ibb.co/kydiL0/experience-fresh-easy.jpg"
             alt="Fresh & Easy Neighborhood Market"
           />
           <figcaption className="experience__caption">

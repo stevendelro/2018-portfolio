@@ -1,7 +1,4 @@
 import React from 'preact-compat';
-import kygoPic from '../../img/about-pic2-kygo.jpg';
-import girlfriendPic from '../../img/about-pic3-nicholle-myself.jpg';
-import hikingPic from '../../img/about-pic1-grand-canyon.jpg';
 
 const About = () => (
   <div>
@@ -49,17 +46,17 @@ const About = () => (
         <div className="col-1-of-2">
           <div className="composition">
             <img
-              src={hikingPic}
+              src="https://image.ibb.co/ffjetL/about-pic1-grand-canyon.jpg"
               alt="Steven hiking at the Grand Canyon."
               className="composition__photo composition__photo--p1"
             />
             <img
-              src={kygoPic}
+              src="https://image.ibb.co/h76ESf/about-pic2-kygo.jpg"
               alt="Kygo, Steven's dog."
               className="composition__photo composition__photo--p2"
             />
             <img
-              src={girlfriendPic}
+              src="https://image.ibb.co/hdnztL/about-pic3-nicholle-myself.jpg"
               alt="Steven and Nicholle on a sunny day."
               className="composition__photo composition__photo--p3"
             />
