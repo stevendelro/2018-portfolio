@@ -24,16 +24,25 @@ class Contact extends Component {
   handleMessage(event) {
     this.setState({ message: event.target.value });
   }
-  sendEmail(event) {
-    // event.preventDefault();
+  async sendEmail(event) {
+    event.preventDefault();
     const { name, email, message } = this.state;
-    axios.post('/', {
-      to: 'stevendelro@pm.me',
-      from: email,
-      subject: `PORTFOLIO LEAD: ${name} has sent you a message!`,
-      text: message,
-      html: `<strong>${message}</strong>`
-    })
+    await axios
+      .post('/', {
+        to: 'stevendelro@pm.me',
+        from: email,
+        subject: `PORTFOLIO LEAD: ${name} has sent you a message!`,
+        text: message,
+        html: `<strong>${message}</strong>`
+      })
+      .then(alert('Email sent! Thanks!'))
+      .then(
+        this.setState({
+          name: '',
+          email: '',
+          message: ''
+        })
+      );
   }
   render() {
     return (
