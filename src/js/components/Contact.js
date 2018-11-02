@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import axios from 'axios';
 class Contact extends Component {
   constructor(props) {
     super(props);
@@ -8,20 +8,32 @@ class Contact extends Component {
       name: '',
       email: '',
       message: ''
-    }
+    };
     this.handleName = this.handleName.bind(this);
     this.handleEmail = this.handleEmail.bind(this);
     this.handleMessage = this.handleMessage.bind(this);
+    this.sendEmail = this.sendEmail.bind(this);
   }
 
   handleName(event) {
-    this.setState({ name: event.target.value })
+    this.setState({ name: event.target.value });
   }
   handleEmail(event) {
-    this.setState({ email: event.target.value })
+    this.setState({ email: event.target.value });
   }
   handleMessage(event) {
-    this.setState({ message: event.target.value })
+    this.setState({ message: event.target.value });
+  }
+  sendEmail(event) {
+    // event.preventDefault();
+    const { name, email, message } = this.state;
+    axios.post('/', {
+      to: 'stevendelro@pm.me',
+      from: email,
+      subject: `PORTFOLIO LEAD: ${name} has sent you a message!`,
+      text: message,
+      html: `<strong>${message}</strong>`
+    })
   }
   render() {
     return (
@@ -77,7 +89,10 @@ class Contact extends Component {
                   />
                 </div>
                 <div className="form__group">
-                  <button className="btn btn--primary u-margin-top-small">
+                  <button
+                    className="btn btn--primary u-margin-top-small"
+                    onClick={this.sendEmail}
+                  >
                     SEND
                   </button>
                 </div>
