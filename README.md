@@ -1,6 +1,6 @@
 # 2018 Portfolio
 
-A full write up of thoughts and anectdotes regarding the creation of this portfolio will be created once I've gotten it hosted.
+A full write up of thoughts and anectdotes regarding the creation of this portfolio will be created once I have it properly hosted.
 
 #### Completed 
 
