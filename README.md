@@ -14,14 +14,14 @@ After implementing preact, my main bundle is roughly 190KiB, so no need to imple
 
 #### Problems to fix:
 
-* Contact form works correctly when hosted from my local machine, but for some reason it doesn't work at all when live on the server. 
-* Favicon up in the browser tab isn't loading.
+* Contact form isn't working correctly because it never receives a resolved response. I don't believe I have the correct MX records set up.
 
 #### Agenda for next week ( Mon 11/5 - Fri 11/9)
-* Fix the above problems
-* Revive an old blog to host the blog posts.
-* Complete the project blog posts.
 
-At this point in time, this portfolio is good enough to begin applying for jobs. 
+* Figure out the MX records and get SendGrid working correctly.
+* Revive an old blog to host the project blog posts.
+* Complete the project blog posts and route the correct url to the blog post button in my project popups.
+
+Other than those things, at this point in time my portfolio is good enough to begin applying for jobs. 
 
 Time to enjoy the weekend and get some rest in order to hit it hard next week!
