@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'preact-compat';
 
 const WeatherApp = () => (
   <div className="popup" id="popup-weather">

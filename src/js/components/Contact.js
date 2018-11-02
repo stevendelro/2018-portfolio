@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'preact-compat';
 import axios from 'axios';
 class Contact extends Component {
   constructor(props) {

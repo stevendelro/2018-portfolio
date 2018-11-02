@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'preact-compat';
 import freshEasyPic from '../../img/experience-fresh-easy.jpg';
 import snugPetPic from '../../img/experience-snug-pet.jpg';
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'preact-compat';
 
 const ProjectCards = () => (
   <section className="section-projects" id="projects">
