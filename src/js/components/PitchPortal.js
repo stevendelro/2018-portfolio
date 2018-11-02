@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'preact-compat';
 
 const PitchPortal = () => (
   <div className="popup" id="popup-pitch">

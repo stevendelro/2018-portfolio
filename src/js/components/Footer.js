@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'preact-compat';
 import logo from '../../img/footer-logo-large.png';
 
 const Footer = () => (

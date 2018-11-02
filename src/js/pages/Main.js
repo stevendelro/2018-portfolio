@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'preact-compat';
 import Navigation from '../components/Navigation';
 import Header from '../components/Header';
 import About from '../components/About';

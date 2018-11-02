@@ -16,7 +16,8 @@ module.exports = {
 
   resolve: {
     alias: {
-      react: path.join(__dirname, 'node_modules', 'react')
+      react: path.join(__dirname, 'node_modules', 'preact-compat'),
+      'react-dom': 'preact-compat'
     },
     extensions: ['.js', '.jsx']
   },
@@ -38,11 +39,7 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        loaders: [
-          'css-loader',
-          'resolve-url-loader',
-          'sass-loader?sourceMap'
-        ]
+        loaders: ['css-loader', 'resolve-url-loader', 'sass-loader?sourceMap']
       },
       {
         test: /\.(gif|png|jpe?g|svg|webp)$/i,

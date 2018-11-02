@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'preact-compat';
 import kygoPic from '../../img/about-pic2-kygo.jpg';
 import girlfriendPic from '../../img/about-pic3-nicholle-myself.jpg';
 import hikingPic from '../../img/about-pic1-grand-canyon.jpg';

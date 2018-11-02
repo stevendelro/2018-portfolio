@@ -1,13 +1,12 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-
+import React from 'preact-compat';
+import { Link } from 'preact-router';
 
 const PageNotFound = () => (
   <div className="container">
     <h2>404</h2>
     <h1>Page not found</h1>
     <br />
-    <Link to="/">
+    <Link href="/">
       <div>
         <span>Go Home</span>
       </div>

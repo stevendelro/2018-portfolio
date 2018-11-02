@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'preact-compat';
 
 const Navigation = () => (
   <div className="navigation">
