@@ -11,17 +11,17 @@
 5. ~Code-split all the things OR server-side render, depending on which is less abrasive to implement.~
 After implementing preact, my main bundle is roughly 190KiB, so no need to implement any more complexity.
 6. Get site back online on Digital Ocean.
+7. Contact form is now running correctly.
 
 #### Problems to fix:
 
-* Contact form isn't working correctly because it never receives a resolved response. I don't believe I have the correct MX records set up.
+* Hunt for errors in styling across all device screen widths.
 
 #### Agenda for next week ( Mon 11/5 - Fri 11/9)
 
-* Figure out the MX records and get SendGrid working correctly.
-* Revive an old blog to host the project blog posts.
 * Complete the project blog posts and route the correct url to the blog post button in my project popups.
+* Make and route a proper "thank you" page when an email is sent from the contact form.
 
-Other than those things, at this point in time my portfolio is good enough to begin applying for jobs. 
+Other than that, this thing is finally DONE. The job hunt begins next week.
 
-Time to enjoy the weekend and get some rest in order to hit it hard next week!
+Time to enjoy the weekend and get some rest in order to hit it hard on Monday.
