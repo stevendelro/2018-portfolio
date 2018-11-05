@@ -17,7 +17,7 @@ const Navigation = () => (
         </li>
         <li className="navigation__item">
           <a
-            href="https://www.linkedin.com/in/stevendelrosario/"
+            href="https://www.linkedin.com/in/stevendelro/"
             className="navigation__link"
           >
             LinkedIn
