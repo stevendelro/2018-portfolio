@@ -35,14 +35,15 @@ class Contact extends Component {
         text: message,
         html: `<strong>${message}</strong>`
       })
-      .then(alert('Email sent! Thanks!'))
+      .then(alert('Email sent! Expect a reply from me within 24 hours. Thanks!'))
       .then(
         this.setState({
           name: '',
           email: '',
           message: ''
         })
-      );
+      )
+      .catch(err => console.log('Error sending email', err));
   }
   render() {
     return (
