@@ -12,16 +12,13 @@
 After implementing preact, my main bundle is roughly 190KiB, so no need to implement any more complexity.
 6. Get site back online on Digital Ocean.
 7. Contact form is now running correctly.
+8. Make and route a proper "thank you" page when an email is sent from the contact form.
+9. Wire up routing to "thank you" page after email submission.
 
 #### Problems to fix:
 
-* Hunt for errors in styling across all device screen widths.
+* Prevent company name text from showing onHover when viewed from small screens.
 
 #### Agenda for next week ( Mon 11/5 - Fri 11/9)
 
 * Complete the project blog posts and route the correct url to the blog post button in my project popups.
-* Make and route a proper "thank you" page when an email is sent from the contact form.
-
-Other than that, this thing is finally DONE. The job hunt begins next week.
-
-Time to enjoy the weekend and get some rest in order to hit it hard on Monday.
