@@ -6,7 +6,7 @@ const Thanks = () => (
 		<h1>Thanks!</h1>
 		<h3>You're email has been sent.</h3>
 		<pre></pre>
-    <Link href="/">Home</Link>
+    <Link className="btn btn--primary u-margin-top-small" href="/">Home</Link>
 	</section>
 );
 
