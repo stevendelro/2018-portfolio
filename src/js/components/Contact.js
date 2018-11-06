@@ -1,5 +1,6 @@
 import React, { Component } from 'preact-compat';
 import axios from 'axios';
+import { route } from 'preact-router';
 class Contact extends Component {
   constructor(props) {
     super(props);
@@ -7,7 +8,8 @@ class Contact extends Component {
     this.state = {
       name: '',
       email: '',
-      message: ''
+      message: '',
+      sent: false
     };
     this.handleName = this.handleName.bind(this);
     this.handleEmail = this.handleEmail.bind(this);
@@ -35,17 +37,20 @@ class Contact extends Component {
         text: message,
         html: `<strong>${message}</strong>`
       })
-      .then(alert('Email sent! Expect a reply from me within 24 hours. Thanks!'))
       .then(
         this.setState({
           name: '',
           email: '',
-          message: ''
+          message: '',
+          sent: true
         })
-      )
-      .catch(err => console.log('Error sending email', err));
+      );
   }
   render() {
+    if (this.state.sent === true) {
+      this.setState({ sent: false })
+      route('/thanks');
+    }
     return (
       <section className="section-contact" id="contact">
         <div className="row">
