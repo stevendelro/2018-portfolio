@@ -1,4 +1,6 @@
-![](https://arbletur.sirv.com/gifs/portfolio2018.gif)<br />
+<p align="center">
+  <img src="https://arbletur.sirv.com/gifs/portfolio2018.gif" alt="Demo" width="600" height="427">
+</p>
 
 ## About The Project
 This portfolio was developed back in 2018 and is *no longer* hosted anywhere. 
