@@ -1,9 +1,11 @@
+![](https://arbletur.sirv.com/gifs/portfolio2018.gif)<br />
+
 ## About The Project
 This portfolio was developed back in 2018 and is *no longer* hosted anywhere. 
 
 If you want to see it live, feel free to download the source code [here](https://github.com/stevendelro/2018-portfolio "link to source code on github"), Just `npm install` the packages and run `npm run build`. Then pop open another terminal and run `npm run start`. It'll be running on `localhost:3000`.
 
-Otherwise, here's [a link to a quick video](https://arbletur.sirv.com/gifs/portfolio2018.mp4 "link to a sample demo of my old portfolio"). Or, just scroll down to see a gif.
+Otherwise, here's [a link to a quick video](https://arbletur.sirv.com/gifs/portfolio2018.mp4 "link to a sample demo of my old portfolio") if the gif doesn't cut it.
 
 ## What motivated me to make this?
 
@@ -45,11 +47,7 @@ So many people commented on that post calling me a fraud and all I did was switc
 - I figured out the hosting on my own. I bought my own domain, and spun up a Unbuntu server over on Digital Ocean. I got my own SSL certificate with Let's Encrypt. There weren't any "one-click" set ups for diy React apps back then.
 
 Anyway, I blew it off. I can't expect "the masses" to dive any deeper than seeing the surface layer of anything on social media.
-<br />
-<br />
-![](https://arbletur.sirv.com/gifs/portfolio2018.gif)<br />
-<br />
-<Br />
+
 ### Built With
 
 * [Preact](https://preactjs.com/)
